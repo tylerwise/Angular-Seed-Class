@@ -3,3 +3,23 @@
   Showing of 'interpolate' filter:
   {{ 'Current version is v%VERSION%.' | interpolate }}
 </p>
+<style>
+table,th,td
+{
+border:1px solid black;
+}
+</style>
+<table>
+	<tr>
+		<th>Make</th>
+		<th>Model</th>
+		<th>Year</th>
+		<th>Price</th>
+	</tr>
+	<tr ng-repeat="car in cars">
+		<td>{{ car.make }}</td>
+		<td>{{ car.model }}</td>
+		<td>{{ car.year }}</td>
+		<td>{{ car.price }}</td>
+	</tr>
+</table>
